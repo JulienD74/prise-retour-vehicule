@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prise de Véhicule</title>
+</head>
+<body>
+  <h1>Prise de Véhicule</h1>
+  <p>Formulaire de prise de véhicule pour la plaque : <strong id="plaque"></strong></p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('plaque').textContent = params.get('plaque') || "Non spécifiée";
+  </script>
+</body>
+</html>
